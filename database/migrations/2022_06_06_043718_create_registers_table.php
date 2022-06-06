@@ -17,8 +17,8 @@ class CreateRegistersTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name')->nullable();
-            $table->longText('email')->nullable();
-            $table->longText('password')->nullable();
+            $table->string('email')->nullable();
+            $table->string('password')->nullable();
         });
     }
 
