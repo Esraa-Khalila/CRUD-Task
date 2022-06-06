@@ -14,6 +14,8 @@ use App\Http\Controllers\RegisterController;
 |
 */
 Route::resource('registers', RegisterController::class);
+Route::get('registers', [RegisterController::class,'index'])->name('esraa');
+Route::post('registers', [RegisterController::class,'index'])->name('esraa');
 Route::get('/', function () {
     return view('welcome');
 });

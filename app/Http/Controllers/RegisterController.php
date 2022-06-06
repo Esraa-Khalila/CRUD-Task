@@ -11,11 +11,17 @@ class RegisterController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        $user = Register::all();
+    public function index(Request $request)
+    {   $data=$request->register_id;
+        if(isset($data)){
+            $user=Register::where('id',$request->register_id)->get();
+            return view('registers.index', compact('user'));
+        }else{
+           $user = Register::all();
 
-        return view('registers.index', compact('user'));
+        return view('registers.index', compact('user')); 
+        }
+        
     }
 
     /**

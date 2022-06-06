@@ -1,6 +1,16 @@
 @extends('layout.master')
 @section('content')
-
+<div class="input-group"style='margin-top:50px'>
+  <div class="form-outline">
+      <form method='post' action="{{route('esraa')}}" >
+          @csrf
+    <input type="search" name='register_id' id="form1" class="form-control" />
+    <label class="form-label" for="form1">Search</label>
+  </div>
+  <button type="submit" class="btn " style='background:#CC0066;color:white'>search
+  </button>
+</form>
+</div>
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left " style='margin-top:70px'>
@@ -25,6 +35,7 @@
         </tr>
         @foreach ($user as $users)
         <tr>
+            <td>{{ $users->id }}</td>
             <td>{{ $users->name }}</td>
             <td>{{ $users->email }}</td>
             <td>
