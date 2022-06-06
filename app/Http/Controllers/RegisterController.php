@@ -39,7 +39,8 @@ class RegisterController extends Controller
         $request->validate([
             'name' => 'required|min:3',
             'email' => 'required|email|unique:registers',
-            'password' => 'required|min:8'
+            'password' => 'required|min:8',
+            'confirm_password'=>'required|same:password',
         ]);
 
         Register::create($request->all());

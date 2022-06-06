@@ -3,11 +3,11 @@
 
     <div class="row">
         <div class="col-lg-12 margin-tb">
-            <div class="pull-left " style='margin:30px'>
+            <div class="pull-left " style='margin-top:70px'>
                 <h2>Users </h2>
             </div>
-            <div class="pull-right "style='margin:30px'>
-                <a class="btn "style='background:#CC0066;color:white' href="{{ route('registers.create') }}"> Create New Product</a>
+            <div class="pull-right "style='margin:70px'>
+                <a class="btn "style='background:#CC0066;color:white' href="{{ route('registers.create') }}"> Create New user</a>
             </div>
         </div>
     </div>

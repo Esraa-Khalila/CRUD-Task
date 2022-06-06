@@ -45,6 +45,12 @@
                 <input  type='password' class="form-control"  name="password" placeholder="password"></input>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+              <strong>confirm password:</strong>
+                <input type='password' class="form-control"  name="confirm_password" placeholder="confirm password"></input>
+            </div>
+        </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                 <button type="submit" class="btn "style='background:#CC0066;color:white'>Submit</button>
